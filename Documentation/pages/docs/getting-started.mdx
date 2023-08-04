@@ -208,7 +208,7 @@ import Graphiti
 import struct Pioneer.ID
 
 func schema() throws -> Schema<Resolver, Context> {
-    .init {
+   try .init {
         // Adding ID as usable scalar for Graphiti
         Scalar(ID.self)
 
